@@ -39,7 +39,6 @@ dill==0.4.0
 distributed==2025.9.1
 distro==1.9.0
 dynaconf==3.2.11
-evidently==0.5.1
 executing==2.2.1
 Faker==37.8.0
 fastjsonschema==2.21.2
@@ -171,7 +170,7 @@ rich-click==1.9.2
 river==0.22.0
 rpds-py==0.27.1
 s3transfer==0.14.0
-scikit-learn==1.5.2
+scikit-learn==1.6.0
 scipy==1.16.2
 seaborn==0.13.2
 Send2Trash==1.8.3
@@ -194,7 +193,7 @@ threadpoolctl==3.6.0
 tinycss2==1.4.0
 toolz==1.0.0
 tornado==6.5.2
-TPOT2==0.1.9a0
+TPOT==1.1.0
 tqdm==4.67.1
 tracely==0.2.9
 traitlets==5.14.3
