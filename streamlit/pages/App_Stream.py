@@ -24,7 +24,7 @@ data obtained from the [Open-Meteo API](https://open-meteo.com/).
 # -------------------------------
 # 2. River Model Setup
 # -------------------------------
-model = preprocessing.StandardScaler() | linear_model.LinearRegression(optimizer=optim.SGD(0.01))
+model = preprocessing.StandardScaler() | linear_model.LinearRegression(optimizer=optim.SGD(0.01)) #learning rate 0.01
 mae = metrics.MAE()
 adwin = drift.ADWIN()
 
@@ -46,7 +46,7 @@ data_history = pd.DataFrame(columns=["timestamp", "temperature", "wind", "predic
 st.sidebar.header("⚙️ Streaming Control")
 st.sidebar.divider()
 
-# ✅ Unique key for checkbox prevents duplication error
+# Unique key for checkbox prevents duplication error
 run_checkbox = st.sidebar.checkbox("Start Streaming", value=False, key="run_checkbox")
 update_interval = st.sidebar.slider("Update Interval (seconds)", 1, 30, 5)
 st.sidebar.caption("Live data fetched from Open-Meteo API (Paris, France).")
