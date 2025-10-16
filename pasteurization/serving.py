@@ -101,7 +101,7 @@ def home():
 
 @app.route("/batch")
 def one_batch():
-    from synth_signals import simulate_batch
+    from synth_sensors import simulate_batch
     df, _ = simulate_batch(1)
     return Response(df.to_json(orient="records"), mimetype="application/json")
 
@@ -139,3 +139,4 @@ def point():
 # -----------------------------
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8001, debug=True, threaded=True)
+ 
