@@ -1,6 +1,4 @@
-import os
 import streamlit as st
-from pathlib import Path
 
 # -------------------------------
 # 1. Streamlit App Configuration
